@@ -1,5 +1,5 @@
 MAX_LINES = 3
-MAX_BET =100
+MAX_BET = 100
 MIN_BET = 1
 
 def deposit():
@@ -14,7 +14,7 @@ def deposit():
         else:
            print("Please enter a number.")
 
-        return amount
+    return amount
     
 
 def get_number_of_lines():
@@ -28,4 +28,12 @@ def get_number_of_lines():
                 print("Enter a valid amount of lines.")
         else:
                 print("Enter a number.")
-deposit()
+
+    return lines
+    
+def main():
+    balance = deposit()
+    lines = get_number_of_lines()
+    print(balance,lines)
+
+main()
